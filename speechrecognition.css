@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #610C9F, #940B92, #DA0C81, #E95793);
+    
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #2980B9, #6DD5FA);
+    color: #610C9F;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#output::selection {
+    background-color: #4caf50;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
